@@ -7,25 +7,65 @@ app.use(cors())
 
 const students = [{
         "id": 1,
-        "cohortName": "17-01-WD-DP",
-        "cohortCode": "g100",
-        "numberOfStudents": 28
+        "fullName": "Kyle Coberly",
+        "title": "Faculty Director",
+        "numberOfdogs": 0
     },{
         "id": 2,
-        "cohortName": "17-01-DS-GT",
-        "cohortCode": "g105",
-        "numberOfStudents": 24
+        "fullName": "Danny Fritz",
+        "title": "Lead Instructor",
+        "numberOfdogs": 0
     },{
         "id": 3,
-        "cohortName": "17-02-WD-PX",
-        "cohortCode": "g109",
-        "numberOfStudents": 30
+        "fullName": "CJ Reynolds",
+        "title": "Lead Instructor",
+        "numberOfdogs": 0
     },{
         "id": 4,
-        "cohortName": "17-03-WD-BD",
-        "cohortCode": "g110",
-        "numberOfStudents": 29
-    }]
+        "fullName": "Brooks Patton",
+        "title": "Lead Instructor",
+        "numberOfdogs": 0
+    },{
+        "id": 5,
+        "fullName": "Roberto Ortega",
+        "title": "Lead Instructor",
+        "numberOfdogs": 1
+    },{
+        "id": 6,
+        "fullName": "Chad Drummond",
+        "title": "Instructor",
+        "numberOfdogs": 0
+      },{
+        "id": 7,
+        "fullName": "Kim Schlesinger",
+        "title": "Instructor",
+        "numberOfdogs": 0
+      },{
+        "id": 8,
+        "fullName": "Peter Ostiguy",
+        "title": "Associate Instructor",
+        "numberOfdogs": 1
+      },{
+        "id": 9,
+        "fullName": "Cass Torske",
+        "title": "Resident",
+        "numberOfdogs": 1
+      },{
+        "id": 10,
+        "fullName": "Matt Winzer",
+        "title": "Resident",
+        "numberOfdogs": 2
+      },{
+        "id": 11,
+        "fullName": "Aaron Goodman",
+        "title": "Resident",
+        "numberOfdogs": 0
+      },{
+        "id": 12,
+        "fullName": "Michelle Bergquist",
+        "title": "Resident",
+        "numberOfdogs": 1
+      }]
 
 
 
@@ -39,7 +79,7 @@ app.get('/:id', (request, response) =>{
     response.status(404)
     response.json({
            error: {
-               message: "No class found!"
+               message: "No Instructor found!"
            }
        })
   }
